@@ -78,7 +78,7 @@ function Header({
         {/* Icons */}
         {!isAuthPage && (
           <div className="icon_group">
-            {user && (
+            {user?.email === 'debasishmohapatra183@gmail.com' && (
               <span
                 className="icon_item"
                 onClick={() => setPage('evaluation')}
