@@ -298,27 +298,35 @@
 /* Mobile */
 @media (max-width: 576px) {
   .navbar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
+    flex-wrap: wrap; /* 🔥 IMPORTANT */
+    gap: 8px;
   }
 
+  /* Logo */
   .logo_img {
-    height: 50px;
-    margin: auto;
+    height: 45px;
   }
 
-  .search_box {
-    width: 100%;
-  }
-
+  /* Icons right side */
   .icon_group {
-    justify-content: space-around;
-    width: 100%;
+    margin-left: auto; /* 🔥 push right */
+    gap: 12px;
     font-size: 18px;
   }
 
-  .login_clean {
+  /* Search goes to next line */
+  .search_box {
+    width: 100%;
+    order: 3; /* 🔥 move below */
+  }
+
+  /* Search input fix */
+  .input_box {
     font-size: 13px;
+    padding: 8px;
+  }
+
+  .search_icon {
+    padding: 8px 10px;
   }
 }
