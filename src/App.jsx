@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
-import Header from './components/header/Header.jsx';
-import Footer from './components/footer/Footer.jsx';
-import Home from './pages/Home.jsx';
-import Cart from './pages/Cart.jsx';
-import About from './pages/About.jsx';
-import Login from './pages/Login.jsx';
-import Register from './pages/Register.jsx';
-import Order from './pages/Order.jsx';
-import Success from './pages/Success.jsx';
-import Orders from './pages/Orders.jsx';
-import Evaluation from './pages/Evaluation.jsx';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import About from './pages/About';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Order from './pages/Order';
+import Success from './pages/Success';
+import Orders from './pages/Orders';
+import Evaluation from './pages/Evaluation';
 
 function App() {
   const [cart, setCart] = useState([]);
