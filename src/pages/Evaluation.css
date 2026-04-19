@@ -1,0 +1,290 @@
+.eval_container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: sans-serif;
+  background: #f4f6f9;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+/* KPI */
+.kpi_row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.kpi_card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kpi_card h3 {
+  margin-top: 5px;
+  color: #2874f0;
+}
+
+/* Cards */
+.card {
+  background: white;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.table th {
+  background: #2874f0;
+  color: white;
+  padding: 8px;
+}
+
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.table tr:hover {
+  background: #f9f9f9;
+}
+
+.table button {
+  margin-right: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table button:first-child {
+  background: #2874f0;
+  color: white;
+}
+
+.table button:last-child {
+  background: #ff4d4d;
+  color: white;
+}
+
+.empty {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+/* Loader */
+.loader {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🔥 TOP SECTION */
+.top_section {
+  margin-top: 20px;
+}
+
+.top_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* 🔥 CARD */
+.top_card {
+  background: linear-gradient(135deg, #2874f0, #00bcd4);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.top_card:hover {
+  transform: translateY(-5px);
+}
+
+/* NAME */
+.top_name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* COUNT */
+.top_count {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.eval_container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.kpi_row {
+  display: flex;
+  gap: 10px;
+}
+
+.kpi_card {
+  background: white;
+  padding: 15px;
+  flex: 1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* TOP */
+.top_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.top_card {
+  background: #2874f0;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* TABLE */
+.table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.table th {
+  background: #2874f0;
+  color: white;
+}
+
+.table td,
+.table th {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+/* POPUP */
+.confirm_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm_box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.confirm_actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm_actions button {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm_actions button:last-child {
+  background: red;
+  color: white;
+}
+
+/* 🔥 GRID */
+.top_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* 🔥 EACH ITEM BOX */
+.top_item_box {
+  position: relative;
+  background: linear-gradient(135deg, #2874f0, #0056d2);
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.top_item_box:hover {
+  transform: translateY(-4px);
+}
+
+/* 🔥 ITEM NAME */
+.item_name {
+  display: block;
+}
+
+/* 🔥 COUNT BADGE */
+.item_count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}

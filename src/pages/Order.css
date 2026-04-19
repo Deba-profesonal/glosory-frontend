@@ -1,0 +1,61 @@
+.order_container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.order_items {
+  margin: 20px 0;
+}
+
+.order_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.order_total {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.place_order_btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #ff6a00, #ff9800);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.place_order_btn:hover {
+  transform: scale(1.03);
+}
+
+.order_message {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+.back_btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: white;
+  border: 2px solid #2874f0;
+  color: #2874f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back_btn:hover {
+  background: #2874f0;
+  color: white;
+  transform: translateY(-2px);
+}

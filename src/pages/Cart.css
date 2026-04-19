@@ -1,0 +1,364 @@
+/* ===== CART ITEM CARD ===== */
+.cart_item {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  align-items: center;
+  transition: 0.3s;
+}
+
+.cart_item:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== IMAGE ===== */
+.cart_item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== DETAILS ===== */
+.cart_details {
+  flex: 1;
+}
+
+.cart_details h4 {
+  font-size: 18px;
+  margin: 0;
+  color: #222;
+}
+
+.cart_details p {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* ===== PRICE ===== */
+.price_box {
+  margin-top: 5px;
+}
+
+.old_price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 8px;
+}
+
+.new_price {
+  color: #28a745;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.total_item_price {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* ===== QUANTITY ===== */
+.qty_box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.qty_box button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #f0f0f0;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.qty_box button:hover {
+  background: #2874f0;
+  color: white;
+}
+
+.qty_box span {
+  margin: 0 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ===== REMOVE BUTTON ===== */
+.remove_btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.remove_btn:hover {
+  background: #b02a37;
+}
+
+/* ===== CART PAGE ===== */
+body {
+  background: #f5f6f8;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* ===== RECOMMEND SECTION ===== */
+.recommend_section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Title */
+.recommend_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Horizontal scroll (premium look) */
+.recommend_container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* Hide scrollbar */
+.recommend_container::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== CARD ===== */
+.recommend_card {
+  min-width: 180px;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.recommend_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.recommend_card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Name */
+.recommend_card h4 {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* Price */
+.recommend_card p {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Button */
+.recommend_container {
+  display: flex;
+  flex-wrap: wrap; /* allow items to wrap to next line */
+  gap: 16px; /* space between cards */
+  justify-content: flex-start; /* align items nicely */
+}
+
+.recommend_card {
+  flex: 1 1 150px; /* flexible width, min 200px */
+  max-width: 220px; /* prevent cards from stretching too wide */
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.recommend_card button:hover {
+  background: #0b5ed7;
+}
+
+/* ===== SUMMARY BOX ===== */
+.cart_summary {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.summary_title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Rows */
+.summary_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Free delivery */
+.free {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+/* Total */
+.summary_total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*Check out button*/
+.checkout_btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ff9800;
+  color: #ff9800;
+  background: transparent;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* 🔥 gradient background effect */
+.checkout_btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  transition: 0.4s;
+  z-index: 0;
+}
+
+/* text above gradient */
+.checkout_btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* hover */
+.checkout_btn:hover::before {
+  left: 0;
+}
+
+.checkout_btn:hover {
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 152, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.continue_btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+  background: transparent;
+
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+/* 🔥 sliding background */
+.continue_btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(45deg, #00bcd4, #009688);
+
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+/* keep text above background */
+.continue_btn span,
+.continue_btn i {
+  position: relative;
+  z-index: 1;
+}
+
+/* hover effect */
+.continue_btn:hover::before {
+  left: 0;
+}
+
+.continue_btn:hover {
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.4);
+}
+
+/* arrow icon */
+.arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* arrow movement */
+.continue_btn:hover .arrow {
+  transform: translateX(-10px);
+}
+
+/* click effect */
+.continue_btn:active {
+  transform: scale(0.95);
+}

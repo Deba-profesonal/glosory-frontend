@@ -1,0 +1,63 @@
+.success_container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success_card {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.checkmark {
+  font-size: 50px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.success_card h2 {
+  margin-bottom: 10px;
+}
+
+.success_card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #2874f0;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.success_card button:hover {
+  background: #0b5ed7;
+}
+/* Base button */
+.success_btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Secondary (View Orders) */
+.success_btn.secondary {
+  background: white;
+  border: 2px solid #2874f0;
+  color: #2874f0;
+}
+
+.success_btn.secondary:hover {
+  background: #f0a728;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(40, 116, 240, 0.3);
+}

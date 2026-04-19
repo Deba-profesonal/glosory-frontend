@@ -1,0 +1,79 @@
+/* Container */
+.orders_container {
+  padding: 25px;
+  background: linear-gradient(135deg, #f1f3f6, #e3f2fd);
+  min-height: 100vh;
+}
+
+/* Title */
+.orders_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.order_card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.order_card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header */
+.order_header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Items */
+.order_items {
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+}
+
+/* Single item */
+.order_item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+/* Footer */
+.order_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Total */
+.order_footer span {
+  font-weight: bold;
+  color: #2874f0;
+}
+
+/* Status */
+.order_status {
+  background: #28a745;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Empty */
+.no_orders {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+  color: #777;
+}
