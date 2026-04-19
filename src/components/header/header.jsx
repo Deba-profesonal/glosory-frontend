@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './header.css';
+import './Header.css';
 import { useState } from 'react';
 import { useRef, useEffect } from 'react';
 
