@@ -22,18 +22,24 @@ function Register({ setPage, setUser }) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email }),
     })
-      .then(res => res.json())
-      .then(res => res.json())
+      .then(async res => {
+        const data = await res.json();
+
+        if (!res.ok) {
+          throw new Error(data.message || 'Failed to send OTP');
+        }
+
+        return data;
+      })
       .then(data => {
         setMessage(data.message);
 
-        // 🔥 ONLY when OTP success
-        if (data.message === 'OTP sent successfully') {
-          setOtpSent(true);
-        }
+        // 🔥 Always set true if success
+        setOtpSent(true);
       })
-      .catch(() => {
-        setMessage('Error sending OTP');
+      .catch(err => {
+        console.error(err);
+        setMessage(err.message || 'Error sending OTP');
       });
   };
 
